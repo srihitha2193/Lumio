@@ -40,7 +40,7 @@ class UserCreate(UserBase):
     Registration payload.
     Password must be ≥ 8 chars, contain at least one digit and one letter.
     """
-    password: str = Field(..., min_length=8, max_length=128)
+    password: str = Field(..., min_length=8, max_length=72)
 
     @field_validator("password")
     @classmethod
@@ -133,7 +133,7 @@ class RefreshRequest(BaseModel):
 
 class ChangePasswordRequest(BaseModel):
     current_password: str
-    new_password: str = Field(..., min_length=8, max_length=128)
+    new_password: str = Field(..., min_length=8, max_length=72)
 
     @field_validator("new_password")
     @classmethod

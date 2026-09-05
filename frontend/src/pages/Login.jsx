@@ -25,11 +25,16 @@ export default function Login() {
     e.preventDefault();
     setError('');
     setIsLoading(true);
+    console.log("Login button clicked");
+    console.log("Attempting login with email:", email);
 
     try {
+      console.log("Calling login API...");
       const profile = await login(email.trim(), password);
+      console.log("Login API success! Profile:", profile);
       navigate(ROLE_HOME[profile.role] ?? '/dashboard');
     } catch (err) {
+      console.error("Login caught an error:", err);
       // Axios wraps the FastAPI detail in err.response.data.detail
       const detail = err.response?.data?.detail;
       if (err.response?.status === 401) {

@@ -52,15 +52,19 @@ export function AuthProvider({ children }) {
    * Throws on failure so the Login page can display error messages.
    */
   const login = useCallback(async (email, password) => {
+    console.log("AuthContext.login calling api.post('/auth/login')...");
     const { data } = await api.post('/auth/login', { email, password });
+    console.log("api.post returned data:", data);
 
     // Persist tokens
     localStorage.setItem('access_token', data.access_token);
     localStorage.setItem('refresh_token', data.refresh_token);
 
     // Fetch full user profile
+    console.log("AuthContext.login calling api.get('/auth/me')...");
     const meRes = await api.get('/auth/me');
     const profile = meRes.data;
+    console.log("Profile fetched:", profile);
 
     localStorage.setItem('user', JSON.stringify(profile));
     setUser(profile);
