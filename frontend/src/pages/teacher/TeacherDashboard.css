@@ -1,0 +1,258 @@
+.td-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Header */
+.td-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.td-header h1 {
+  text-align: left;
+  margin: 0 0 0.2rem;
+  font-size: 1.9rem;
+  color: #064e3b;
+}
+
+.td-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.td-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+  font-weight: 700;
+  font-size: 0.92rem;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Stats Row */
+.td-stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.td-stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  transition: transform 0.2s;
+}
+
+.td-stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.td-stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.td-stat-value {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1e1e2f;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.td-stat-label {
+  font-size: 0.82rem;
+  color: #9ca3af;
+  margin: 0;
+  font-weight: 600;
+}
+
+.td-stat-change {
+  font-size: 0.75rem;
+  color: #10b981;
+  margin: 0.15rem 0 0;
+  font-weight: 700;
+}
+
+/* Main Grid */
+.td-main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.td-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.td-card h2 {
+  font-size: 1.1rem;
+  color: #1e1e2f;
+  margin-bottom: 1rem;
+}
+
+.td-chart-wrapper {
+  height: 260px;
+}
+
+.td-doughnut-wrapper {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.td-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #10b981;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.td-link:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Grid */
+.td-bottom-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1.5rem;
+}
+
+.td-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.td-card-head h2 {
+  margin: 0;
+}
+
+/* Mini Table */
+.td-mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.td-mini-table th {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.td-mini-table td {
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid #f3f4f6;
+  color: #374151;
+}
+
+.td-mini-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.td-student-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.td-student-cell img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ecfdf5;
+}
+
+.td-risk-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.td-muted {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+/* Tasks */
+.td-task-list {
+  list-style: none;
+}
+
+.td-task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 600;
+}
+
+.td-task-item:last-child {
+  border-bottom: none;
+}
+
+.td-task-item.done span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.td-task-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .td-main-grid,
+  .td-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .td-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

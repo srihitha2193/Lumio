@@ -1,0 +1,149 @@
+.login-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.login-header h1 {
+  color: #ff6b6b;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-header p {
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Role Selector */
+.role-selector {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 11px 8px;
+  border-radius: 14px;
+  border: 3px solid #e5e7eb;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role-btn:hover {
+  border-color: #a5b4fc;
+  color: #6366f1;
+}
+
+.role-btn.active {
+  color: #fff;
+}
+
+.role-btn.child-active {
+  background: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.role-btn.parent-active {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+
+.role-btn.teacher-active {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #4ecdc4;
+}
+
+.login-btn {
+  background: #ff6b6b;
+  font-size: 1.3rem;
+  padding: 15px;
+  margin-top: 1rem;
+}
+
+.login-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed #eee;
+}
+
+.login-footer p {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* ── Auth error banner ─────────────────────────────── */
+.login-error {
+  background: #fff5f5;
+  border: 2px solid #feb2b2;
+  border-radius: 12px;
+  color: #c53030;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  text-align: left;
+  animation: shake 0.35s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25%       { transform: translateX(-6px); }
+  75%       { transform: translateX(6px); }
+}
+
+/* ── Disabled state while loading ─────────────────── */
+.input-group input:disabled {
+  background: #f9fafb;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.login-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+

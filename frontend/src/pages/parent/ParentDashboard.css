@@ -1,0 +1,291 @@
+.pd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+.pd-header {
+  margin-bottom: 2rem;
+}
+
+.pd-header h1 {
+  text-align: left;
+  margin-bottom: 0.3rem;
+  font-size: 2rem;
+  color: #1e1e2f;
+}
+
+.pd-subtitle {
+  color: #6b7280;
+  font-size: 1.05rem;
+}
+
+/* --- Overview Stats --- */
+.pd-stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.pd-stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pd-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pd-stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pd-stat-value {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #1e1e2f;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.pd-stat-label {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* --- Section Title --- */
+.pd-section-title {
+  font-size: 1.3rem;
+  color: #1e1e2f;
+  margin-bottom: 1.2rem;
+}
+
+/* --- Children Row --- */
+.pd-children-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pd-child-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.pd-child-card:hover {
+  transform: translateY(-4px);
+}
+
+.pd-child-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.pd-child-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid #6366f1;
+  background: #eef2ff;
+}
+
+.pd-child-top h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1e1e2f;
+}
+
+.pd-child-age {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+.pd-risk-badge {
+  margin-left: auto;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.pd-child-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.pd-child-stats > div {
+  text-align: center;
+}
+
+.pd-child-stats span {
+  display: block;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.pd-child-stats strong {
+  font-size: 1rem;
+  color: #1e1e2f;
+}
+
+.pd-xp-bar-wrapper {
+  margin-bottom: 1rem;
+}
+
+.pd-xp-bar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+
+.pd-xp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #a5b4fc);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.pd-xp-text {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-weight: 700;
+}
+
+.pd-view-btn {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  font-size: 0.95rem;
+  background: #6366f1;
+  text-decoration: none;
+}
+
+.pd-view-btn:hover {
+  background: #4f46e5;
+}
+
+/* --- Bottom Grid --- */
+.pd-bottom-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+}
+
+.pd-chart-card,
+.pd-activity-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.pd-chart-card h2,
+.pd-activity-card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: #1e1e2f;
+}
+
+.pd-chart-wrapper {
+  height: 260px;
+}
+
+/* --- Activity List --- */
+.pd-activity-list {
+  list-style: none;
+}
+
+.pd-activity-item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  align-items: flex-start;
+}
+
+.pd-activity-item:last-child {
+  border-bottom: none;
+}
+
+.pd-activity-dot {
+  width: 10px;
+  height: 10px;
+  background: #6366f1;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.pd-activity-content p {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.pd-activity-meta {
+  display: flex;
+  gap: 1rem;
+}
+
+.pd-activity-time {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+.pd-activity-xp {
+  font-size: 0.8rem;
+  color: #6366f1;
+  font-weight: 800;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .pd-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pd-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pd-children-row {
+    grid-template-columns: 1fr;
+  }
+}

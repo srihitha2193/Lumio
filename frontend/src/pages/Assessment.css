@@ -1,0 +1,106 @@
+.assessment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.assessment-card {
+  padding: 3rem 2rem;
+}
+
+.reading-text {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  font-family: 'Comic Sans MS', 'Nunito', sans-serif;
+  margin: 2rem 0;
+  color: #333;
+}
+
+.reading-text .word {
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.reading-text .word:hover {
+  background: #fff0f0;
+  color: #ff6b6b;
+  cursor: pointer;
+}
+
+.recording-controls {
+  margin-top: 3rem;
+}
+
+.record-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(255,107,107,0.4);
+}
+
+.record-btn:hover {
+  transform: scale(1.1);
+}
+
+.record-btn.recording {
+  background: #ff4757;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,71,87, 0.7); }
+  70% { box-shadow: 0 0 0 20px rgba(255,71,87, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,71,87, 0); }
+}
+
+.success-card {
+  padding: 4rem 2rem;
+  animation: slideUp 0.5s ease;
+}
+
+.success-card h2 {
+  font-size: 2.5rem;
+  color: #2ecc71;
+  margin: 1rem 0;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.stat {
+  background: #f8f9fa;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat span {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.stat strong {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

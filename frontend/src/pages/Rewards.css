@@ -1,0 +1,93 @@
+.rewards-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.rewards-stats {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.r-stat h2 {
+  font-size: 2.5rem;
+  color: #ff6b6b;
+  margin: 0;
+}
+
+.r-stat p {
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.r-progress {
+  flex: 1;
+  text-align: center;
+}
+
+.progress-bar {
+  height: 25px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4ecdc4, #55efc4);
+  border-radius: 20px;
+}
+
+.r-progress p {
+  font-weight: bold;
+  color: #777;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.badge-card {
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.badge-icon {
+  width: 80px;
+  height: 80px;
+  background: #fff9e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.badge-card.locked {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.locked-text {
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: bold;
+}

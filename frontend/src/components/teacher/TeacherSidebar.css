@@ -1,0 +1,175 @@
+.ts-sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #064e3b 0%, #065f46 50%, #047857 100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  color: #d1fae5;
+}
+
+/* --- Header --- */
+.ts-header {
+  padding: 1.4rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ts-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.ts-logo-row h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.ts-badge {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.25);
+  color: #6ee7b7;
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* --- Profile --- */
+.ts-profile {
+  padding: 1.3rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ts-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #1a3a2a;
+  border: 3px solid #10b981;
+  margin-bottom: 0.5rem;
+}
+
+.ts-profile h3 {
+  color: #ffffff;
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+
+.ts-school {
+  color: #a7f3d0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.ts-class {
+  color: #6ee7b7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin: 0.2rem 0 0;
+  background: rgba(16, 185, 129, 0.15);
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+/* --- Alert Banner --- */
+.ts-alert-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 1rem 0.5rem;
+  padding: 0.55rem 1rem;
+  background: rgba(251, 191, 36, 0.15);
+  border-radius: 10px;
+  color: #fbbf24;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* --- Navigation --- */
+.ts-nav {
+  flex: 1;
+  padding: 0.6rem 0;
+  overflow-y: auto;
+}
+
+.ts-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  color: #a7f3d0;
+  text-decoration: none;
+  font-size: 0.98rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  gap: 12px;
+  border-left: 3px solid transparent;
+}
+
+.ts-nav-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  padding-left: 1.8rem;
+}
+
+.ts-nav-item.active {
+  background: rgba(16, 185, 129, 0.2);
+  color: #ffffff;
+  border-left-color: #10b981;
+}
+
+/* --- Logout --- */
+.ts-logout {
+  color: #fca5a5;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ts-logout:hover {
+  background: rgba(248, 113, 113, 0.12);
+  color: #fecaca;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .ts-sidebar {
+    width: 70px;
+    overflow: hidden;
+  }
+  .ts-logo-row h2,
+  .ts-badge,
+  .ts-profile h3,
+  .ts-school,
+  .ts-class,
+  .ts-alert-banner span,
+  .ts-nav-item span {
+    display: none;
+  }
+  .ts-avatar {
+    width: 38px;
+    height: 38px;
+  }
+  .ts-nav-item {
+    justify-content: center;
+    padding: 0.9rem;
+  }
+  .ts-nav-item:hover {
+    padding-left: 0.9rem;
+  }
+}

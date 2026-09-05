@@ -1,0 +1,154 @@
+.parent-sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1e1e2f 0%, #2d2d44 100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  color: #ccc;
+}
+
+/* --- Header --- */
+.ps-header {
+  padding: 1.5rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ps-header h2 {
+  color: #ffffff;
+  margin: 0 0 0.4rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.ps-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.25);
+  color: #a5b4fc;
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* --- Profile --- */
+.ps-profile {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ps-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #3a3a5c;
+  border: 3px solid #6366f1;
+  margin-bottom: 0.6rem;
+}
+
+.ps-profile h3 {
+  color: #ffffff;
+  margin: 0 0 0.2rem;
+  font-size: 1.1rem;
+}
+
+.ps-email {
+  color: #888;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* --- Notifications --- */
+.ps-notifications {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 1.2rem 0.5rem;
+  padding: 0.6rem 1rem;
+  background: rgba(251, 191, 36, 0.12);
+  border-radius: 10px;
+  color: #fbbf24;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* --- Navigation --- */
+.ps-nav {
+  flex: 1;
+  padding: 0.8rem 0;
+  overflow-y: auto;
+}
+
+.ps-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.85rem 1.5rem;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  gap: 14px;
+  border-left: 3px solid transparent;
+}
+
+.ps-nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e7ff;
+  padding-left: 1.8rem;
+}
+
+.ps-nav-item.active {
+  background: rgba(99, 102, 241, 0.15);
+  color: #a5b4fc;
+  border-left-color: #6366f1;
+}
+
+/* --- Logout --- */
+.ps-logout {
+  color: #f87171;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ps-logout:hover {
+  background: rgba(248, 113, 113, 0.1);
+  color: #fca5a5;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .parent-sidebar {
+    width: 70px;
+    overflow: hidden;
+  }
+  .ps-header h2,
+  .ps-badge,
+  .ps-profile h3,
+  .ps-email,
+  .ps-notifications span,
+  .ps-nav-item span {
+    display: none;
+  }
+  .ps-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .ps-nav-item {
+    justify-content: center;
+    padding: 1rem;
+  }
+  .ps-nav-item:hover {
+    padding-left: 1rem;
+  }
+}
